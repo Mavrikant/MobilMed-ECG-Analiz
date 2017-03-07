@@ -195,7 +195,6 @@ def hello():
     global Sdata
     global sr
     url=request.form['myFile']
-	print (url)
     adu=int(request.form['adu'])
     lno=int(request.form['lno'])-1
     sr=int(request.form['sr'])#Sampling rate in Hz ( samples/sec)

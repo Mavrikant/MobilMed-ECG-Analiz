@@ -1416,12 +1416,12 @@ def traffic():
 def simple_upload(request):
     if request.method == 'POST' and request.FILES['myfile']:
         myfile = request.FILES['myfile']
-	print (myfile)
+        print (myfile)
         fs = FileSystemStorage()
-	print (fs)
+        print (fs)
         filename = fs.save(myfile.name, myfile)
         print (filename)
-	uploaded_file_url = fs.url(filename)
+        uploaded_file_url = fs.url(filename)
         print (uploaded_file_url)
-	return render(request, 'core/simple_upload.html', { 'uploaded_file_url': uploaded_file_url })
+        return render(request, 'core/simple_upload.html', { 'uploaded_file_url': uploaded_file_url })
     return render(request, 'core/simple_upload.html')	

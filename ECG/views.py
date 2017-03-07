@@ -28,7 +28,6 @@ def contact():
         'contact.html',
         title='Contact',
         year=datetime.now().year,
-        message='Rupams Contact.',
         app_name='MobilMed',
     )
 
@@ -1405,7 +1404,7 @@ def traffic():
         'about.html',
         title='About',
         year=datetime.now().year,
-        message='This is Rupams First Flask App.',
+        message='',
         app_name='Mobilmed',
 
     )

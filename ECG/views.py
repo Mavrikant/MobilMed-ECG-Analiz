@@ -18,7 +18,7 @@ def home():
         'index.html',
         title='Home Page',
         year=datetime.now().year,
-        app_name='Hrydyalysis',
+        app_name='MobilMed',
     )
 
 @app.route('/contact')
@@ -29,7 +29,7 @@ def contact():
         title='Contact',
         year=datetime.now().year,
         message='Rupams Contact.',
-        app_name='Hrydyalysis',
+        app_name='MobilMed',
     )
 
 @app.route('/about')
@@ -39,10 +39,8 @@ def about():
         'about.html',
         title='About',
         year=datetime.now().year,
-        message='Hrydyalysis- The ECG Cardio revolution',
-        email='rupam.iics@gmail.com',
-        phone='+919845048861',
-        app_name='Hrydyalysis',
+        message='MobilMed- The ECG Cardio revolution',
+        app_name='MobilMed',
 
     )
 
@@ -53,7 +51,7 @@ def form():
     return render_template(
     'form_submit.html',
      year=datetime.now().year,
-     app_name='Hrydyalysis',
+     app_name='MobilMed',
     
    
     )
@@ -62,7 +60,7 @@ def fact():
     return render_template(
     'factorial_submit.html',
      year=datetime.now().year,
-     app_name='Hrydyalysis',
+     app_name='MobilMed',
     
    
     )
@@ -119,7 +117,7 @@ def ecg():
            yAxis=yAxis,
            year=datetime.now().year,
            data=tab,
-           app_name='Hrydyalysis',
+           app_name='MobilMed',
         )
     except  Exception:
         if traceback.format_exc().find("url")!=-1:
@@ -1199,7 +1197,7 @@ def factorial():
                            number=str(number), 
                            factorial=fact1,
                             year=datetime.now().year,
-                            app_name='Hrydyalysis',
+                            app_name='MobilMed',
 
 
                            )
@@ -1219,7 +1217,7 @@ def chart(chartID = 'chart_ID', chart_type = 'line', chart_height = 350):
         xAxis=xAxis, 
         yAxis=yAxis,
         year=datetime.now().year,
-        app_name='Hrydyalysis',
+        app_name='MobilMed',
         )
 
 #thins method is working.. displaying a simple chart with python-nvd3
@@ -1266,7 +1264,7 @@ def data():
         html_part=chart.htmlcontent,
         scripts=chart.header_js,
         year=datetime.now().year,
-        app_name='Hrydyalysis',
+        app_name='MobilMed',
         )
 
 #This method is for Creating Bubble chart
@@ -1276,7 +1274,7 @@ def data2():
     return render_template(
         'stock1.html', 
         year=datetime.now().year,
-        app_name='Hrydyalysis',
+        app_name='MobilMed',
         )
 
 import csv
@@ -1334,7 +1332,7 @@ def cam():
         
         year=datetime.now().year,
        
-        app_name='Hrydyalysis',
+        app_name='MobilMed',
     )
 ###############################
 ########## Face Tracking############
@@ -1343,7 +1341,7 @@ def face_tracking():
     return render_template(
                            'track.html',
                            year=datetime.now().year,
-                            app_name='Hrydyalysis',
+                            app_name='MobilMed',
                            )
 #############################
 @app.route('/face_stat', methods=['GET','POST'])
@@ -1386,7 +1384,7 @@ def ECG():
     return render_template(
                            'ECG.html',
                            year=datetime.now().year,
-                            app_name='Hrydyalysis',
+                            app_name='Mobilmed',
                            )
 ######### Traffic accident data analysis
 @app.route('/traffic')
@@ -1408,6 +1406,6 @@ def traffic():
         title='About',
         year=datetime.now().year,
         message='This is Rupams First Flask App.',
-        app_name='Hrydyalysis',
+        app_name='Mobilmed',
 
     )

@@ -5,8 +5,8 @@
                 <form method="post" action="{{ url_for('ecg') }}">
                   <table>
                   <tr>
-                  <td><label for="url">ECG URL:</label></td>
-                  <td><input type="text" name="url"  size="100"/></td>
+				  <td><label for="url">ECG file:</label></td>
+                  <td><input type="file" name="myFile" class="form-control input-md-4" id="myFile" /></td>
                   </tr>
                   <tr>
                   <td>
@@ -23,8 +23,7 @@
                   <td><input type="text" name="adu"  size="20" value="200" style="width: 55px"/></td>
                   </tr>
                        </table>
-                    (for dropbox url trailing should be dl=1)
-                    <br />(ECG Lead No Must be between 1 to 12)
+                    
                     <br />
                     <em>The signal may take 10-30s for processing</em><br />
                   <input type="submit" value="Submit" onclick="this.form.submit();this.disabled = true; this.value = 'Processing';"/>

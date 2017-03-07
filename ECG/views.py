@@ -7,6 +7,9 @@ from flask import render_template,jsonify
 from ECG import app
 from csv import *
 import flask
+from django.shortcuts import render
+from django.conf import settings
+from django.core.files.storage import FileSystemStorage
 
 
 @app.route('/')
@@ -1409,3 +1412,19 @@ def traffic():
         app_name='Mobilmed',
 
     )
+	
+	
+def simple_upload(request):
+    if request.method == 'POST' and request.FILES['myfile']:
+        myfile = request.FILES['myfile']
+		print (myfile)
+        fs = FileSystemStorage()
+		print (fs)
+        filename = fs.save(myfile.name, myfile)
+        print (filename)
+		uploaded_file_url = fs.url(filename)
+        print (uploaded_file_url)
+		return render(request, 'core/simple_upload.html', {
+            'uploaded_file_url': uploaded_file_url
+        })
+    return render(request, 'core/simple_upload.html')	

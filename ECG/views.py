@@ -201,8 +201,7 @@ def hello():
 
     df=pd.read_csv(url, delim_whitespace=True)
     df=df['ADC']
-    print ("print (df)=")
-    print (df)
+
     tab='Analysis of Lead '+ str(lno+1) + ' of Signal:<br/>'+ url+'<hr/>'
     #tab=df.head().to_html();
 
@@ -211,8 +210,7 @@ def hello():
 #        tab='<p style = "color: blue">Invalid Lead No.+ Only '+str(len(leads))+ ' present</p>'
 
     na=np.array(df.values)
-    print ("print (na)")
-    print (na)
+
     l2=np.around( na/adu,4)
     lno=lno+1;#asking user to enter between 1-12, lead is actually between 0-11
     L2=[];

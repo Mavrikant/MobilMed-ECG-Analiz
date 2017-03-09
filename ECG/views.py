@@ -192,8 +192,8 @@ def hello():
     global Sdata
     global sr
     url=request.form['url']
-    adu=int(request.form['adu'])
-    lno=int(request.form['lno'])-1
+    adu=int(200)
+    lno=int(1)-1
     sr=int(request.form['sr'])#Sampling rate in Hz ( samples/sec)
     import pandas as pd;
     import matplotlib.pyplot as plt, mpld3

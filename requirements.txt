@@ -4,7 +4,7 @@ Django==1.11.23
 Flask==1.0
 Flask-SocketIO==2.5
 forked-path==0.2.3
-gunicorn==18.0
+gunicorn==19.5.0
 htmlPy==2.0.3
 ijson==2.3
 itsdangerous==0.24

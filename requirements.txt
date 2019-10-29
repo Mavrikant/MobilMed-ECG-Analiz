@@ -18,7 +18,7 @@ pandas==0.18.1
 Pillow==6.2.0
 pyparsing==2.1.5
 python-dateutil==2.5.3
-python-engineio==0.9.2
+python-engineio==3.8.2.post1
 python-nvd3==0.14.2
 python-slugify==1.1.4
 python-socketio==1.4.1

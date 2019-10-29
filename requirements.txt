@@ -1,6 +1,6 @@
 click==6.6
 cycler==0.10.0
-Django==1.9.7
+Django==1.11.23
 Flask==1.0
 Flask-SocketIO==2.5
 forked-path==0.2.3

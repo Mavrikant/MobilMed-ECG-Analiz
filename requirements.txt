@@ -23,7 +23,7 @@ python-nvd3==0.14.2
 python-slugify==1.1.4
 python-socketio==1.4.1
 pytz==2016.4
-PyYAML==3.11
+PyYAML==5.1
 requests==2.20.0
 six==1.10.0
 Unidecode==0.4.19

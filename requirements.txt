@@ -28,6 +28,6 @@ requests==2.20.0
 six==1.10.0
 Unidecode==0.4.19
 virtualenv==15.0.2
-waitress==1.4.2
+waitress==1.4.3
 webcam-streamer==1.0.5
 Werkzeug==0.15.3
